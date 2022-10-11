@@ -5,5 +5,10 @@ Ethernet is a family of wired computer networking technologies used in LANs, MAN
 
 This project focuses on the input module of the switch which is responsible to first buffer the incoming frame and subsequently send it to the right output port based on the decision taken by the MAC learning module.
 
-The architecture of the switch is shown below
+The design architecture and the interaction between different modules of the switch is shown below:
 ![Specification](./arch/Specifications_2.png?raw=true)
+
+The input block, its components and the governing statemachine is shown below:
+![Input Block](./arch/Input_Block_Components.png?raw=true)
+
+![State Machine](./statemachine/State_Machine.png?raw=true)
